@@ -47,9 +47,10 @@ class ContactsListViewController: UITableViewController {
     private func pushDataToTabs(for data: [Person]) {
         guard let tabBarControllers = tabBarController?.viewControllers else { return }
         
-        if let contactsSectionsVC = tabBarControllers[1] as? ContactsSectionsViewController {
-            contactsSectionsVC.persons = persons
+        for controller in tabBarControllers {
+            if let contactsSectionsVC = controller as? ContactsSectionsViewController {
+                contactsSectionsVC.persons = persons
+            }
         }
     }
-
 }
