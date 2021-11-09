@@ -42,6 +42,7 @@ class DataManager {
 extension DataManager: PersonProtocol {
     func getPersons() -> [Person] {
         var resultData: [Person] = []
+        
         var tempFirstNames = firstNames
         var tempLastNames = lastNames
         var tempPhones = phones
