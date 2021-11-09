@@ -63,8 +63,7 @@ extension DataManager: PersonProtocol {
     private func randomValue(from list: inout [String]) -> String {
         let randomIndex = Int.random(in: 0..<list.count)
         let value = list[randomIndex]
-        list[randomIndex] = ""
-        list = list.filter { $0 != "" }
+        list = list.filter { $0 != value }
         
         return value
     }
