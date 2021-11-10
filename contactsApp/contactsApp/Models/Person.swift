@@ -5,8 +5,6 @@
 //  Created by Станислав Буйновский on 08.11.2021.
 //
 
-import Foundation
-
 struct Person {
     let firstName: String
     let lastName: String
@@ -15,5 +13,26 @@ struct Person {
     
     var fullName: String {
         firstName + " " + lastName
+    }
+}
+
+extension Person {
+    static func getPersons(with dataManager: DataManager) -> [Person] {
+        var resultData: [Person] = []
+        
+        let firstNames = dataManager.firstNames.shuffled()
+        let lastNames = dataManager.lastNames.shuffled()
+        let phones = dataManager.phones.shuffled()
+        let emails = dataManager.emails.shuffled()
+        
+        for index in 0 ... firstNames.count - 1 {
+            let person = Person(firstName: firstNames[index],
+                                lastName: lastNames[index],
+                                phone: phones[index],
+                                email: emails[index])
+            resultData.append(person)
+        }
+        
+        return resultData
     }
 }

@@ -15,7 +15,7 @@ class ContactDetailedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.title = person.fullName
         
         phoneLabel.text = "Phone: \(person.phone)"

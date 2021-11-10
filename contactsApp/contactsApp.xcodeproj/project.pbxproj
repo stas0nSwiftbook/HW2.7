@@ -17,6 +17,7 @@
 		C20E2AAA2739CD09009A194D /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E2AA92739CD09009A194D /* ContactsListViewController.swift */; };
 		C20E2AAC2739CD40009A194D /* ContactsSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E2AAB2739CD40009A194D /* ContactsSectionsViewController.swift */; };
 		C20E2AAE2739CD7E009A194D /* ContactDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E2AAD2739CD7E009A194D /* ContactDetailedViewController.swift */; };
+		C20E2AB2273BF0A1009A194D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E2AB1273BF0A1009A194D /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C20E2AA92739CD09009A194D /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		C20E2AAB2739CD40009A194D /* ContactsSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSectionsViewController.swift; sourceTree = "<group>"; };
 		C20E2AAD2739CD7E009A194D /* ContactDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailedViewController.swift; sourceTree = "<group>"; };
+		C20E2AB1273BF0A1009A194D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		C20E2AA12739BEFE009A194D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C20E2AB1273BF0A1009A194D /* TabBarViewController.swift */,
 				C20E2AA92739CD09009A194D /* ContactsListViewController.swift */,
 				C20E2AAB2739CD40009A194D /* ContactsSectionsViewController.swift */,
 				C20E2AAD2739CD7E009A194D /* ContactDetailedViewController.swift */,
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20E2AB2273BF0A1009A194D /* TabBarViewController.swift in Sources */,
 				C20E2AAE2739CD7E009A194D /* ContactDetailedViewController.swift in Sources */,
 				C20E2AA82739BFCC009A194D /* DataManager.swift in Sources */,
 				C20E2A8D2739BDC7009A194D /* AppDelegate.swift in Sources */,

@@ -25,18 +25,16 @@ class ContactsSectionsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailedCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         
         let person = persons[indexPath.section]
         
         switch indexPath.row{
         case 0:
-            cell = tableView.dequeueReusableCell(withIdentifier: "phoneCell", for: indexPath)
             content.text = person.phone
             content.image = UIImage(systemName: "phone")
         default:
-            cell = tableView.dequeueReusableCell(withIdentifier: "emailCell", for: indexPath)
             content.text = person.email
             content.image = UIImage(systemName: "mail")
         }
